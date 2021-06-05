@@ -19,7 +19,6 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Change directory
-      run: cd /home/runner/work/git-test/git-test/githubactions/
     - name: Build with Maven
+      working-directory: ./githubactions
       run: mvn -B package --file pom.xml

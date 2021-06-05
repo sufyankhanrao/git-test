@@ -28,4 +28,4 @@ jobs:
       with:
         default_author: github_actions
         message: 'Updated output'
-        add: 'file.txt --force'
+        add: './githubactions/file.txt --force'
